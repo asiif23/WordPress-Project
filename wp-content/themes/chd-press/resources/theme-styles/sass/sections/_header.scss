@@ -1,0 +1,84 @@
+/**
+ *	Styling the Header of the site
+ */
+#masthead {
+	font-size: 1rem;
+	.header-area {
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+}
+
+header.style-3 {
+	input[type="search"] {
+		background-color: $primary !important;
+		color: white !important;
+	}
+	.search-btn-main {
+		background: none;
+		border: 0;
+		font-size: 1.5em;
+	}
+}
+
+.nav-wrapper {
+	position: relative;
+	background-color: $primary;
+	padding: 0.5em 0;
+	@media (min-width: 992px) {
+		padding: 0;
+	}
+	& > * {
+		position: relative;
+	}
+	button {
+		background: none;
+		border: 0;
+		font-size: 1.6em;
+		color: white;
+	}
+}
+
+#header-image {
+	position: relative;
+	min-height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,.4);
+	}
+}
+
+.site-branding {
+	position: relative;
+	@media (max-width: 767px) {
+		margin-bottom: 0.5em;
+		text-align: center;
+	}
+	.site-title {
+		margin: 0;
+	}
+	.site-description {
+		margin-bottom: 0;
+	}
+	img.custom-logo {
+		max-height: 120px;
+		width: auto;
+	}
+}
+
+//Style 2
+#logo-ad-area {
+	display: flex;
+	align-items: center;
+	section {
+		margin-bottom: 0;
+	}
+}

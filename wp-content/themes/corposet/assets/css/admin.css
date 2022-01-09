@@ -1,0 +1,114 @@
+.corposet-getting-started-notice {
+    padding: 20px 10px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.corposet-theme-screenshot img {
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+.corposet-theme-notice-content {
+    width: 70%;
+    display: block;
+    vertical-align: top;
+    padding: 0 20px;
+}
+
+h2.corposet-notice-h2 {
+    margin: 0 0 10px;
+	font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.corposet-push-down {
+    padding-top: 15px;
+    display: inline-block;
+    padding-left: 8px;
+}
+
+.corposet-button-padding.updating-message::before {
+  margin-top: 12px;
+}
+
+
+/* Upgrade Info */
+.upgrade_ubt_info ul {
+	margin: 0;
+	padding: 0;
+}
+
+.upgrade_ubt_info ul li {
+	margin-bottom: 10px;
+}
+
+.upgrade_ubt_info ul li a {
+	font-family: "Noto Sans", sans-serif;
+	font-weight: bold;
+	padding: 12px 10px;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 3px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	overflow: hidden;
+	-webkit-transition: .3s;
+	transition: .3s;
+	background: #009efa;
+	background: -webkit-linear-gradient(to right, #233fe7, #009efa);
+	background: linear-gradient(to right, #233fe7, #009efa);
+	z-index: 2;
+}
+
+.upgrade_ubt_info ul li a:hover,
+.upgrade_ubt_info ul li a:focus,
+.nice-feedback {
+	background: rgb(63, 94, 251) !important;
+	background: -moz-radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%) !important;
+	background: -webkit-radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%) !important;
+	background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb", endColorstr="#fc466b", GradientType=1);
+}
+
+.upgrade_ubt_info ul li a i {
+	font-size: 15px;
+	margin-top: 1px;
+	margin-right: 7px;
+}
+
+.upgrade_ubt_info .upgrade-to-pro {
+	background: rgb(2, 0, 36);
+	background: -moz-linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+	background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024", endColorstr="#00d4ff", GradientType=1);
+
+}
+
+li#accordion-section-upgrade_premium .accordion-section-title:after {
+	content: "\f174" !important;
+	color: #fff !important;
+}
+
+li#accordion-section-upgrade_premium .accordion-section-title,
+li#accordion-section-upgrade_premium .accordion-section-title:hover {
+	color: #fff !important;
+	border-left: none;
+	background: rgb(2,0,36);
+        background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,12,157,1) 27%, rgba(0,212,255,1) 100%) !important;
+        background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,12,157,1) 27%, rgba(0,212,255,1) 100%) !important;
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,12,157,1) 27%, rgba(0,212,255,1) 100%) !important;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+}

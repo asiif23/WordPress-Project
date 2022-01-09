@@ -1,0 +1,35 @@
+/**
+ *	Add Footer Styling
+ */
+
+#footer-sidebar {
+	position: relative;
+	background-color: $secondary;
+	padding: 3em 0;
+	.widget {
+		color: #aaa;
+		padding: 0;
+		h4.widget-title {
+			margin-top: 0;
+			color: $tertiary;
+		}
+		a {
+			color: white;
+		}
+		li:before {
+			color: $primary;
+		}
+	}
+}
+
+#colophon {
+	background-color: $primary;
+	@extend %heading-font;
+	color: white;
+	text-align: center;
+	padding: 10px 0 20px;
+	a {
+		font-weight: 700;
+		color: #fff;
+	}
+}

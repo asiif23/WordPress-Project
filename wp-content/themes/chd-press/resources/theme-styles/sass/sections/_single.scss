@@ -1,0 +1,130 @@
+/**
+ *	Styling for Single Post Page
+ */
+
+body.single {
+	#primary {
+		h1.entry-title {
+			font-weight: 700;
+		}
+		.entry-meta {
+			display: flex;;
+			align-items: center;
+			margin-bottom: 1.5em;
+			&:after {
+				content: "";
+				position: relative;
+				height: 1px;
+				width: 100%;
+				background-color: #ddd;
+			}
+			& > * {
+				flex-shrink: 0;
+				margin-right: 1em;
+			}
+			a {
+				color: $primary;
+				font-size: 0.9em;
+				text-transform: uppercase;
+			}
+		}
+		.entry-content {
+			margin-bottom: 1em;
+			padding-bottom: 1em;
+			border-bottom: solid 1px #eee;
+		}
+		.entry-footer {
+			margin-bottom: 2em;
+			i {
+				position: relative;
+				line-height: 1.8em;
+				padding: 0em 0.8em;
+				margin-right: 0.5em;
+				color: #ccc;
+				&:before {
+					z-index: 2;
+				}
+				&:after {
+					content: "";
+					position: absolute;
+					width: 80%;
+					padding-bottom: 80%;
+					background-color: transparent;
+					border-radius: 50%;
+					outline: solid 2px #ccc;
+					top: -3px;
+					left: 3px;
+					z-index: 0;
+				}
+			}
+			& > * {
+				margin-bottom: 1em;
+			}
+		}
+		.chdp-related-posts {
+			.entry-meta {
+				margin-bottom: 0.5em;
+				&:after {
+					display: none;
+				}
+				a {
+					font-weight: 400;
+					color: #777;
+				}
+			}
+		}
+		.nav-links {
+			width: 100%;
+            background-color: #f6f6f6;
+			padding: 0.8em 1.2em;
+			margin-bottom: 2em;
+			overflow: hidden;
+            a {
+                font-weight: 700;
+            }
+			& > * {
+				display: inline-block;
+				max-width: 50%;
+			}
+			.nav-previous {
+				float: left;
+				display: flex;
+				flex-direction: column;
+				&:before {
+					content: 'Previous Post';
+					width: 100%;
+					font-size: 0.85em;
+					color: #777777;
+				}
+			}
+			.nav-next {
+				float: right;
+				display: flex;
+				flex-direction: column;
+				&:before {
+					content: 'Next Post';
+					width: 100%;
+					font-size: 0.85em;
+					color: #777777;
+				}
+			}
+			a {
+				color: $primary;
+			}
+		}
+		#author_box {
+			border: solid 1px #ddd;
+			padding: 1em;
+			h4 {
+				margin-top: 0;
+			}
+			img {
+				padding: 0.6em;
+				border: solid 1px #eee;
+			}
+			.author_info {
+				padding-left: 1em;
+			}
+		}
+	}
+}

@@ -1,0 +1,203 @@
+/**
+ *	Styling for the widget section of the theme
+ */
+
+.widget {
+	.widget-area:not(#header-widget-wrapper) & {
+		margin-bottom: 2em;
+	}
+	.widget-title {
+		margin-top: 0;
+		margin-bottom: .75em;
+		font-weight: 700;
+		#chdp-before-content & {
+			text-align: center;
+		}
+	}
+	&.widget_search {
+		label {
+			display: none;
+		}
+		input[type="search"] {
+			border-radius: 0;
+			border: solid 1px alpha(black, -0.92);
+			width: 100%;
+			padding: .3em .5em;
+		}
+		button[type="submit"] {
+			background-color: $tertiary;
+			text-transform: uppercase;
+			font-weight: 700;
+			color: white;
+			border: 0;
+		}
+	}
+	&.widget_chdp_cats_tab {
+		overflow: auto;
+		ul {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			margin-bottom: 0;
+			li {
+				display: inline-block;
+				float: left;
+				margin: 0;
+				position: relative;
+				text-transform: uppercase;
+				width: auto;
+				overflow: hidden;
+				a {
+					color: white;
+					background-color: $primary;
+					padding: .5em 1.2em;
+					font-size: .9em;
+					@include line-clamp(1);
+					&:hover {
+						color: white;
+					}
+				}
+				&:before {
+					content: "";
+					margin-right: 0;
+				}
+			}
+			&.is-vertical {
+				font-size: .9em;
+			}
+		}
+		.tabs-slider {
+			position: relative;
+			content: "";
+			top: 100%;
+			left: 0;
+			width: 0;
+			height: 0;
+			border-top: solid 10px $primary;
+			border-bottom: solid 10px transparent;
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+		}
+		.ui-tabs {
+			text-align: center;
+		}
+		.category_panel {
+			&.is-vertical {
+				.chdp-card-wrapper {
+					padding: 0;
+					border: 0;
+				}
+				.chdp-thumb {
+					overflow: hidden;
+				}
+			}
+		}
+	}
+	&.widget_chdp_cat_slider {
+		.owl-stage-outer {
+			overflow: hidden;
+		}
+		.owl-nav {
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+			position: relative;
+			left: 2em;
+			margin: auto;
+			overflow: hidden;
+			button {
+				display: inline-block;
+				overflow: hidden;
+				margin: 10px 8px 0;
+				span {
+					padding: 0 .3em;
+					background-color: $primary;
+					color: white;
+				}
+			}
+			span {
+				font-size: 3em;
+				color: $primary;
+			}
+		}
+		.slide-title {
+			position: absolute;
+			display: inline-block;
+			bottom: 10%;
+			max-width: 50%;
+			background-color: $primary;
+			h3 {
+				display: inline-block;
+				margin: .5em .8em;
+				font-size: 1.2em;
+				@media screen and (min-width: 768px) {
+					font-size: 2em;
+				}
+ 			}
+			a {
+				@include line-clamp(1);
+				color: white;
+			}
+		}
+	}
+	&.widget_chdp_recent_posts {
+		overflow: auto;
+		.chdp-widget-post {
+			margin-bottom: 0.8em;
+		}
+		.chdp-widget-post-thumb {
+			overflow: hidden;
+		}
+
+		.chdp-widget-post-title {
+			padding-left: .75em;
+			line-height: 1.5;
+			.chdp-widget-post-link {
+				display: block;
+				color: $primary;
+			}
+			@media screen and (min-width: 768px) {
+				margin-top: 0;
+			}
+
+			.recent-date {
+				font-size: .75em;
+				color: #888;
+			}
+		}
+	}
+	&.widget_chdp_featured_cat {
+		@extend .widget_chdp_recent_posts;
+	}
+	ul {
+		margin-left: 0;
+		list-style: none;
+		li {
+			position: relative;
+			a {
+				color: $primary;
+				@include transition(color 100ms $standard);
+				text-decoration: underline;
+				&:hover {
+					color: lighten($primary, 13%);
+				}
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+//Widget Blocks
+.widget_block {
+	ul, ol {
+		li {
+			line-height: 1.6em;
+		}
+	}
+	a {
+		text-decoration: underline;
+		color: $primary;
+	}
+}

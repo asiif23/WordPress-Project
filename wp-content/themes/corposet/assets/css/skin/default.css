@@ -1,0 +1,451 @@
+/* :root {
+  --primary-color: #0c59db;
+  --secondary-color: #273272;
+  --light-color: #8f98b9;
+} */
+:root {
+	--primary-color: #062383 ;
+	--secondary-color:  #282D41;
+	--light-color: #8f98b9;
+	--theme-color: #00091D;
+	--theme-dark: #010714;
+
+  }
+
+.site-branding-text, .site-branding-text h1 a {
+	color: #fff;
+}
+.site-branding-text, .site-branding-text h1 p {
+	color: #fff;
+}
+.navbar-collapse.show {
+	background: var(--secondary-color);
+}
+
+h1 a, h4 a {
+	color: #151a33;
+}
+button, .btn-default {
+	background: #fff;
+    color: var(--primary-color);
+	border-color: var(--primary-color);
+	border: nones;
+	box-shadow: 0px 1px 3px 0 rgb(0 0 0 / 20%);
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+.btn-default::before{
+	content: '';
+	display: block;
+	background-color: var(--primary-color);
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0;
+	height: 100%;
+	transition: all 0.5s ease;
+	z-index: -1;
+}
+.btn-default:hover::before{
+	width: 100%;
+
+}
+
+button:hover, .btn-default:hover, .btn-default:focus {
+	background: transparent;
+	color: white;
+	border-color: var(--primary-color);
+}
+blockquote {
+    background: #f5f5f5;
+    border-color: var(--primary-color);;
+}
+
+.sliderhome .owl-nav div {
+	background: rgba(0,0,0,0);
+	color: white;
+	border-color: rgba(255, 255, 255, 0.5);
+}
+.owl-nav div {
+	background: var(--secondary-color);
+	color: white;
+	border-color: var(--secondary-color);
+}
+.owl-nav div:hover {
+	background: var(--primary-color);
+	color: white;
+	border-color: var(--primary-color);
+}
+
+.btn-white {
+	background: #fff;
+	color: var(--primary-color);
+}
+.btn-white:hover, .btn-white:focus {
+	background: var(--primary-color);
+	color: white;
+	border-color: var(--primary-color);
+}
+.widget .tagcloud a {
+	background: #f4f7fc;
+    color: #062383;
+    border: 1px solid var(--primary-color);
+}
+.widget .tagcloud a:hover {
+	background: var(--primary-color);
+	color: white;
+}
+.widget ul li a {
+	color: #748494;
+}
+.widget ul li a:hover {
+	color: var(--primary-color);
+}
+/* ---- navbar ----*/
+.navbar li a {
+	color: white;
+}
+.navbar li a:hover, .navbar li a:focus  {
+	color: var(--primary-color);
+}
+.navbar .dropdown-menu a {
+	color: var(--secondary-color);
+}
+/* ---- topbar ----*/
+.topbar {
+	background: var(--secondary-color);
+}
+.topbar ul li {
+	color: white;
+}
+.topbar ul li a {
+	color: white;
+}
+.topbar ul.left li i {
+	color: #fff;
+}
+div.right-aria a.quote_btn {
+	color: var(--primary-color);
+}
+div.right-aria a.btn:hover{
+    color: #fff;
+}
+/* div.right-aria a.btn:hover{
+    color: #fff;
+} */
+
+
+/* ----header-2--- */
+
+header.hds-2 .navbar li a{
+	color: #000;
+}
+header.hds-2 .right-aria a .fa.fa-search {
+	color: #000;
+}
+header.hds-2 .main-nav{
+    background: #fff;
+}
+header.hds-2 .nav-wapper {
+    background: transparent;
+}
+
+header.hds-2 .navbar-collapse.show {
+    background: #fff;
+}
+
+/* ----header-2--- */
+
+header.hds-3 .navbar li a {
+    color: #000;
+}
+header.hds-3 .navbar-nav{
+    background: #fff;
+}
+/* ----header-4--- */
+
+header.hds-4  .topbar {
+    background-color: rgba(0,0,0,0.4);
+}
+header.hds-4 .topbar ul.left li i {
+     color:var(--primary-color);
+	 background-color: #ffffff;
+}
+
+header.hds-4 .nav-wapper {
+    background: transparent;
+}
+header.hds-4 .main-nav{
+    background: #fff;
+}
+
+header.hds-4 .navbar li a {
+    color: #000;
+}
+header.hds-4 .navbar-collapse.show {
+    background: transparent;
+}
+
+header.hds-4 ul.navbar-nav li.nav-item {
+	 background-color: transparent; 
+}
+
+/* ---- sliderhome ----*/
+.sliderhome .slide:before {
+    background: rgba(2, 45, 98, 0.3);
+}
+.sliderhome  .owl-nav div {
+  color: white;
+}
+.sliderhome h2, .sliderhome {
+  color: white;
+}
+
+.owl-slide-text a.btn-white{
+	border: 1px solid #fff;
+	color: #fff;
+	margin: 0 10px;
+	background:transparent;
+}
+.owl-slide-text a.btn-white:hover{
+	background: #fff;
+	color: var( --secondary-color);
+	border: none;
+} 
+/* ---- ==== section title ==== ----*/
+.bg-dark:after {
+    background: var(--secondary-color);
+}
+.bg-dark  h2, .bg-dark .section-heading h2.ititle, .bg-dark {
+	color: #fff;
+}
+.bg-default {
+    background: var(--primary-color);
+}
+.cover-bg .section-heading h3.sub-title {
+	color: #fff;
+}
+/* ---- features ----*/
+.feature.active{
+	background: var(--primary-color);
+	color: #fff;
+}
+.feature.active h5{
+	color: #fff;
+}
+.feature.active i{
+	color: var(--primary-color);
+    background-color: #fff;
+}
+.feature i {
+	color: var(--primary-color);
+    background-color: #F4F9FC;
+}
+
+.feature:hover i {
+	color:  var(--primary-color);
+    background-color: #fff;
+}
+
+.feature:hover h5 {
+	color: #fff;
+}
+.feature:hover p{
+	color: #fff;
+	margin-bottom: 0;
+}
+
+/* --------feature-two--------- */
+.section.features.two {
+	background-color: #F4F9FC;
+
+}
+
+
+/* ---- teams ----*/
+.service .bottom_text h2 a {
+	 color: var(--secondary-color);
+}
+.service .top_icon{
+	background-color: var(--primary-color);
+}
+
+.service .top_icon i {
+	
+	color: #fff;
+}
+.service:hover .top_icon i, .service:hover .bottom_text h2 a, .service:hover .bottom_text p {
+
+}
+/* .service:hover .inner {
+    background: rgba(0,0,0,0.4);
+}
+.service.img:hover .inner {
+    background: transparent;
+} */
+.service.img:hover .top_icon i, .service.img:hover .bottom_text h2 a, .service.img:hover .bottom_text p {
+    color: unset;
+}
+.bg-grey {
+	background: #f8f8f8;
+}
+/* ---- teams ----*/
+.top_icon i {
+	color: #000;
+}
+.team{
+	background: #fff;
+}
+.team.one h2, .team.one h2 a {
+	color: var(--primary-color);
+    background-color: #f4f7fc;
+}
+.team.one .designation{
+	color: #fff;
+    background-color: var(--primary-color);
+}
+.team .social {
+	background: rgba(0,0,0,0.4);
+}
+.team .social a {
+	background: white;
+	color: var(--primary-color);
+}
+.team .social a:hover{
+	background: var(--primary-color);
+	color: white;
+}
+.team.one .social {
+     background: rgba(0,0,0,0);
+}
+
+
+/* ---- portfolio ----*/
+.portfolio, .portfolio h2 a {
+    color: white;
+}
+.portfolio:hover {
+    background: rgba(0,0,0,0.4);
+}
+.portfolio .inner{
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,0.9) 100%);
+    color: white;
+}
+.portfolio .inner:hover{
+	background: rgba(0,0,0,0);
+
+}
+
+.portfolio .icon a {
+    background: #fff;
+    color: var(--primary-color);
+}
+.portfolio .icon a:hover{
+	background: var(--primary-color);
+	color: white;
+}
+.portfolio .inner:hover .bottom_text p{
+	color: #fff;
+
+}
+/* ---- teams ----*/
+.funfact i {
+	color: #fff;
+}
+/* ---- callout ----*/
+.callout, .callout h2, .callout h3 {
+	color: white;
+}
+/* ---- calltoaction ----*/
+.calltoaction, .calltoaction h2 {
+	color: white;
+}
+.calltoaction p {
+    color: #fff;
+}
+.plan .price {
+	color: #000;
+}
+/* -----------------blog------------------- */
+.post_content h4:hover a{
+    color: var(--primary-color);
+}
+
+
+/* ---- ==== Breadcrumb ==== ----*/
+.breadcrumb .inner {
+    /* background-image: url(../../../images/breadcrumb-2/bg-1.jpg); */
+	background-size: cover;
+}
+.breadcrumb h1 {
+    color: #fff;
+}
+.breadcrumb, .breadcrumb ul li a, .breadcrumb-item.active {
+	color: #fff;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    color: #fff !important;
+}
+.breadcrumb-item.active {
+    color: #fff !important;
+}
+
+.sidebar .widget h3 {
+	border-left-color: var(--primary-color);
+}
+
+.widget .input-group-btn .btn {
+	background: var(--primary-color);
+	color: white;
+	border-color: var(--primary-color);
+}
+.widget .input-group-btn .btn:hover {
+	background: var(--secondary-color);
+	color: white;
+}
+/* ---- blogpost ----*/
+.post_img span.date {
+    background: var(--primary-color);
+    color: #fff;
+}
+.post_img span.date a {
+    color: #fff;
+}
+.post_meta a {
+	color: var(--secondary-color);
+}
+.post_meta a:hover {
+	color: var(--primary-color);
+}
+/* ---- pagination ----*/
+ul.pagination a.page-link {
+    color: var(--primary-color);
+}
+ul.pagination a.page-link:hover, ul.pagination .page-item.active .page-link {
+    color: #fff;
+    border-color:var(--primary-color);
+    background-color:var(--primary-color);
+}
+/* ---- footer ----*/
+footer .inner{
+	background: var(--theme-color);
+}
+footer .widget h4,footer .widget h5, footer .widget {
+	color: white;
+}
+footer .widget ul li, footer .widget ul li a {
+	color: white;
+}
+footer .widget ul li a:hover {
+	color: #fff; 
+}
+footer ul.social li a {
+	color: var(--primary-color); 
+}
+
+footer .bottom {
+	background: var(--theme-dark);
+	color: white;
+}
